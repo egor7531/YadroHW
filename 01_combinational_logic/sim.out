@@ -1,0 +1,127 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2009.vpi";
+S_0x6196fac81380 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x6196fac81510 .scope module, "testbench" "testbench" 3 3;
+ .timescale 0 0;
+v0x6196fac9b9b0_0 .var "a", 0 0;
+v0x6196fac9baa0_0 .var "b", 0 0;
+v0x6196fac9bb60_0 .var/2s "i", 31 0;
+v0x6196fac9bc00_0 .var/2s "j", 31 0;
+v0x6196fac9bce0_0 .net "o", 0 0, L_0x6196facac140;  1 drivers
+S_0x6196fac7fa20 .scope module, "inst" "xor_gate_using_mux" 3 8, 4 20 0, S_0x6196fac81510;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "o";
+L_0x7d178ee7f018 .functor BUFT 1, C4<00000000000000000000000000000001>, C4<0>, C4<0>, C4<0>;
+v0x6196fac9b410_0 .net/2s *"_ivl_0", 31 0, L_0x7d178ee7f018;  1 drivers
+L_0x7d178ee7f060 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x6196fac9b510_0 .net/2s *"_ivl_4", 31 0, L_0x7d178ee7f060;  1 drivers
+v0x6196fac9b5f0_0 .net "a", 0 0, v0x6196fac9b9b0_0;  1 drivers
+v0x6196fac9b6c0_0 .net "b", 0 0, v0x6196fac9baa0_0;  1 drivers
+v0x6196fac9b7b0_0 .net "gap", 0 0, L_0x6196fac9be20;  1 drivers
+v0x6196fac9b8f0_0 .net "o", 0 0, L_0x6196facac140;  alias, 1 drivers
+L_0x6196facabf10 .part L_0x7d178ee7f018, 0, 1;
+L_0x6196facac000 .part L_0x7d178ee7f060, 0, 1;
+S_0x6196fac7fc50 .scope module, "mux_xor" "mux" 4 40, 4 5 0, S_0x6196fac7fa20;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "d0";
+    .port_info 1 /INPUT 1 "d1";
+    .port_info 2 /INPUT 1 "sel";
+    .port_info 3 /OUTPUT 1 "y";
+v0x6196fac82070_0 .net "d0", 0 0, v0x6196fac9baa0_0;  alias, 1 drivers
+v0x6196fac9abc0_0 .net "d1", 0 0, L_0x6196fac9be20;  alias, 1 drivers
+v0x6196fac9ac80_0 .net "sel", 0 0, v0x6196fac9b9b0_0;  alias, 1 drivers
+v0x6196fac9ad20_0 .net "y", 0 0, L_0x6196facac140;  alias, 1 drivers
+L_0x6196facac140 .functor MUXZ 1, v0x6196fac9baa0_0, L_0x6196fac9be20, v0x6196fac9b9b0_0, C4<>;
+S_0x6196fac9ae60 .scope module, "not_b" "mux" 4 33, 4 5 0, S_0x6196fac7fa20;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "d0";
+    .port_info 1 /INPUT 1 "d1";
+    .port_info 2 /INPUT 1 "sel";
+    .port_info 3 /OUTPUT 1 "y";
+v0x6196fac9b0d0_0 .net "d0", 0 0, L_0x6196facabf10;  1 drivers
+v0x6196fac9b190_0 .net "d1", 0 0, L_0x6196facac000;  1 drivers
+v0x6196fac9b250_0 .net "sel", 0 0, v0x6196fac9baa0_0;  alias, 1 drivers
+v0x6196fac9b2f0_0 .net "y", 0 0, L_0x6196fac9be20;  alias, 1 drivers
+L_0x6196fac9be20 .functor MUXZ 1, L_0x6196facabf10, L_0x6196facac000, v0x6196fac9baa0_0, C4<>;
+    .scope S_0x6196fac81510;
+T_0 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x6196fac9bb60_0, 0, 32;
+T_0.0 ;
+    %load/vec4 v0x6196fac9bb60_0;
+    %cmpi/s 1, 0, 32;
+    %flag_or 5, 4;
+    %jmp/0xz T_0.1, 5;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x6196fac9bc00_0, 0, 32;
+T_0.2 ;
+    %load/vec4 v0x6196fac9bc00_0;
+    %cmpi/s 1, 0, 32;
+    %flag_or 5, 4;
+    %jmp/0xz T_0.3, 5;
+    %load/vec4 v0x6196fac9bb60_0;
+    %pad/s 1;
+    %store/vec4 v0x6196fac9b9b0_0, 0, 1;
+    %load/vec4 v0x6196fac9bc00_0;
+    %pad/s 1;
+    %store/vec4 v0x6196fac9baa0_0, 0, 1;
+    %delay 1, 0;
+    %load/vec4 v0x6196fac9bce0_0;
+    %load/vec4 v0x6196fac9b9b0_0;
+    %load/vec4 v0x6196fac9baa0_0;
+    %xor;
+    %cmp/ne;
+    %jmp/0xz  T_0.4, 6;
+    %vpi_call/w 3 22 "$display", "FAIL %s", "01_11_xor_gate_using_mux/testbench.sv" {0 0 0};
+    %vpi_func/s 3 23 "$sformatf", "a:%h", v0x6196fac9b9b0_0 {0 0 0};
+    %vpi_func/s 3 23 "$sformatf", "b:%h", v0x6196fac9baa0_0 {0 0 0};
+    %vpi_func/s 3 23 "$sformatf", "i:%h", v0x6196fac9bb60_0 {0 0 0};
+    %vpi_func/s 3 23 "$sformatf", "j:%h", v0x6196fac9bc00_0 {0 0 0};
+    %vpi_call/w 3 23 "$display", "++ INPUT    => {%s, %s, %s, %s}", S<3,str>, S<2,str>, S<1,str>, S<0,str> {0 0 4};
+    %load/vec4 v0x6196fac9b9b0_0;
+    %load/vec4 v0x6196fac9baa0_0;
+    %xor;
+    %vpi_func/s 3 24 "$sformatf", "a^b:%h", S<0,vec4,u1> {1 0 0};
+    %vpi_call/w 3 24 "$display", "++ EXPECTED => {%s}", S<0,str> {0 0 1};
+    %vpi_func/s 3 25 "$sformatf", "o:%h", v0x6196fac9bce0_0 {0 0 0};
+    %vpi_call/w 3 25 "$display", "++ ACTUAL   => {%s}", S<0,str> {0 0 1};
+    %vpi_call/w 3 26 "$finish", 32'sb00000000000000000000000000000001 {0 0 0};
+T_0.4 ;
+    ; show_stmt_assign_vector: Get l-value for compressed += operand
+    %load/vec4 v0x6196fac9bc00_0;
+    %pushi/vec4 1, 0, 32;
+    %add;
+    %cast2;
+    %store/vec4 v0x6196fac9bc00_0, 0, 32;
+    %jmp T_0.2;
+T_0.3 ;
+    ; show_stmt_assign_vector: Get l-value for compressed += operand
+    %load/vec4 v0x6196fac9bb60_0;
+    %pushi/vec4 1, 0, 32;
+    %add;
+    %cast2;
+    %store/vec4 v0x6196fac9bb60_0, 0, 32;
+    %jmp T_0.0;
+T_0.1 ;
+    %vpi_call/w 3 30 "$display", "PASS %s", "01_11_xor_gate_using_mux/testbench.sv" {0 0 0};
+    %vpi_call/w 3 31 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "01_11_xor_gate_using_mux/testbench.sv";
+    "01_11_xor_gate_using_mux/01_11_xor_gate_using_mux.sv";
