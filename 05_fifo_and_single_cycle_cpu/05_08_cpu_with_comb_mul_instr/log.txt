@@ -1,0 +1,42 @@
+WARNING: ./instruction_rom.sv:25: $readmemh(program.hex): Not enough words in the file for the requested range [0:1023].
+VCD info: dumpfile dump.vcd opened for output.
+VCD warning: $dumpvars: Package ($unit) is not dumpable with VCD.
+cycle     0     Xxxxxxxx         
+cycle     1                      
+cycle     2 rst                  
+cycle     3 rst 00000000         
+cycle     4              00000001
+cycle     5     00000001         
+cycle     6     00000002         
+cycle     7     00000003 00000002
+cycle     8     00000004         
+cycle     9     00000002         
+cycle    10     00000003 00000006
+cycle    11     00000004         
+cycle    12     00000002         
+cycle    13     00000003 00000018
+cycle    14     00000004         
+cycle    15     00000002         
+cycle    16     00000003 00000078
+cycle    17     00000004         
+cycle    18     00000002         
+cycle    19     00000003 000002d0
+cycle    20     00000004         
+cycle    21     00000002         
+cycle    22     00000003 000013b0
+cycle    23     00000004         
+cycle    24     00000002         
+cycle    25     00000003 00009d80
+cycle    26     00000004         
+cycle    27     00000002         
+cycle    28     00000003 00058980
+cycle    29     00000004         
+cycle    30     00000002         
+cycle    31     00000003 00375f00
+cycle    32     00000004         
+cycle    33     00000002         
+cycle    34     00000003 02611500
+cycle    35     00000004         
+cycle    36     00000002         
+cycle    37     00000003 1c8cfc00
+./tb.sv PASS

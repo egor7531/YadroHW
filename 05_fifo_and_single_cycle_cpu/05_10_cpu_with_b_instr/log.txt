@@ -1,0 +1,18 @@
+WARNING: ./instruction_rom.sv:25: $readmemh(program.hex): Not enough words in the file for the requested range [0:1023].
+cycle     0     Xxxxxxxx         
+cycle     1                      
+cycle     2 rst                  
+cycle     3 rst 00000000         
+cycle     4                      
+cycle     5     00000001         
+cycle     6     00000002         
+cycle     7     00000003         
+cycle     8     00000004         
+cycle     9     00000005         
+cycle    10     00000006         
+cycle    11     00000007 00000000
+cycle    12     00000008         
+cycle    13     00000009         
+cycle    14     0000000a 00000001
+cycle    15     0000000b         
+cycle    16     0000000c./tb.sv FAIL: fetched instruction at address 0000000c contains Xs: xxxxxxxx

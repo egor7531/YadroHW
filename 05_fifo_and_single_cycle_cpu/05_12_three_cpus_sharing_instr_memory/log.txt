@@ -1,0 +1,4 @@
+./tb.sv:144: error: Unable to bind wire/reg/memory `cluster.imAddr[i]' in `tb.$ivl_for_loop1'
+./tb.sv:144: error: Unable to elaborate condition expression.
+./tb.sv:154: error: Unable to bind wire/reg/memory `cluster.imAddr[i]' in `tb.$ivl_for_loop1'
+3 error(s) during elaboration.

@@ -1,0 +1,278 @@
+VCD info: dumpfile dump.vcd opened for output.
+VCD warning: $dumpvars: Package ($unit) is not dumpable with VCD.
+time      10 cycle     0                                                              
+time      20 cycle     1                                                              
+time      30 cycle     2                                                              
+time      40 cycle     3 rst         a_ready           b_ready                        
+time      50 cycle     4 rst         a_ready           b_ready                        
+time      60 cycle     5 rst         a_ready           b_ready                        
+*** Run back-to-back
+time      70 cycle     6     a_valid a_ready 0 b_valid b_ready 0           sum_ready  
+time      80 cycle     7     a_valid a_ready 1 b_valid b_ready 4           sum_ready  
+time      90 cycle     8     a_valid a_ready 9 b_valid b_ready 3 sum_valid sum_ready 0
+time     100 cycle     9     a_valid a_ready d b_valid b_ready d sum_valid sum_ready 5
+time     110 cycle    10     a_valid a_ready 5 b_valid b_ready 2 sum_valid sum_ready c
+time     120 cycle    11     a_valid a_ready d b_valid b_ready 1 sum_valid sum_ready a
+time     130 cycle    12     a_valid a_ready 6 b_valid b_ready d sum_valid sum_ready 7
+time     140 cycle    13     a_valid a_ready c b_valid b_ready d sum_valid sum_ready e
+time     150 cycle    14     a_valid a_ready 9 b_valid b_ready 6 sum_valid sum_ready 3
+time     160 cycle    15     a_valid a_ready a b_valid b_ready 5 sum_valid sum_ready 9
+time     170 cycle    16     a_valid a_ready 5 b_valid b_ready 7 sum_valid sum_ready f
+time     180 cycle    17     a_valid a_ready f b_valid b_ready 2 sum_valid sum_ready f
+time     190 cycle    18     a_valid a_ready 2 b_valid b_ready e sum_valid sum_ready c
+time     200 cycle    19     a_valid a_ready 5 b_valid b_ready 8 sum_valid sum_ready 1
+time     210 cycle    20     a_valid a_ready c b_valid b_ready d sum_valid sum_ready 0
+time     220 cycle    21     a_valid a_ready 5 b_valid b_ready d sum_valid sum_ready d
+time     230 cycle    22     a_valid a_ready 3 b_valid b_ready a sum_valid sum_ready 9
+time     240 cycle    23     a_valid a_ready 0 b_valid b_ready 0 sum_valid sum_ready 2
+time     250 cycle    24     a_valid a_ready a b_valid b_ready d sum_valid sum_ready d
+time     260 cycle    25     a_valid a_ready 3 b_valid b_ready 6 sum_valid sum_ready 0
+*** Supplying only "a"
+time     270 cycle    26     a_valid a_ready d         b_ready   sum_valid sum_ready 7
+time     280 cycle    27     a_valid a_ready b         b_ready   sum_valid sum_ready 9
+time     290 cycle    28     a_valid a_ready 5         b_ready             sum_ready  
+time     300 cycle    29     a_valid a_ready 2         b_ready             sum_ready  
+time     310 cycle    30     a_valid                   b_ready             sum_ready  
+time     320 cycle    31     a_valid                   b_ready             sum_ready  
+time     330 cycle    32     a_valid                   b_ready             sum_ready  
+time     340 cycle    33     a_valid                   b_ready             sum_ready  
+time     350 cycle    34     a_valid                   b_ready             sum_ready  
+time     360 cycle    35     a_valid                   b_ready             sum_ready  
+time     370 cycle    36     a_valid                   b_ready             sum_ready  
+time     380 cycle    37     a_valid                   b_ready             sum_ready  
+time     390 cycle    38     a_valid                   b_ready             sum_ready  
+time     400 cycle    39     a_valid                   b_ready             sum_ready  
+time     410 cycle    40     a_valid                   b_ready             sum_ready  
+time     420 cycle    41     a_valid                   b_ready             sum_ready  
+time     430 cycle    42     a_valid                   b_ready             sum_ready  
+time     440 cycle    43     a_valid                   b_ready             sum_ready  
+time     450 cycle    44     a_valid                   b_ready             sum_ready  
+time     460 cycle    45     a_valid                   b_ready             sum_ready  
+*** Supplying only "b"
+time     470 cycle    46     a_valid           b_valid b_ready 3           sum_ready  
+time     480 cycle    47     a_valid           b_valid b_ready d           sum_ready  
+time     490 cycle    48     a_valid a_ready e b_valid b_ready f sum_valid sum_ready 0
+time     500 cycle    49             a_ready   b_valid b_ready 3 sum_valid sum_ready 8
+time     510 cycle    50             a_ready   b_valid b_ready a sum_valid sum_ready 4
+time     520 cycle    51             a_ready   b_valid b_ready c sum_valid sum_ready 5
+time     530 cycle    52             a_ready   b_valid b_ready 2 sum_valid sum_ready 8
+time     540 cycle    53             a_ready   b_valid b_ready a           sum_ready  
+time     550 cycle    54             a_ready   b_valid b_ready 1           sum_ready  
+time     560 cycle    55             a_ready   b_valid                     sum_ready  
+time     570 cycle    56             a_ready   b_valid                     sum_ready  
+time     580 cycle    57             a_ready   b_valid                     sum_ready  
+time     590 cycle    58             a_ready   b_valid                     sum_ready  
+time     600 cycle    59             a_ready   b_valid                     sum_ready  
+time     610 cycle    60             a_ready   b_valid                     sum_ready  
+time     620 cycle    61             a_ready   b_valid                     sum_ready  
+time     630 cycle    62             a_ready   b_valid                     sum_ready  
+time     640 cycle    63             a_ready   b_valid                     sum_ready  
+time     650 cycle    64             a_ready   b_valid                     sum_ready  
+time     660 cycle    65             a_ready   b_valid                     sum_ready  
+time     670 cycle    66             a_ready   b_valid                     sum_ready  
+time     680 cycle    67             a_ready   b_valid                     sum_ready  
+*** Applying backpressure
+time     690 cycle    68             a_ready   b_valid                     sum_ready  
+time     700 cycle    69     a_valid a_ready a b_valid                                
+time     710 cycle    70     a_valid a_ready 8 b_valid                                
+time     720 cycle    71     a_valid a_ready 9 b_valid b_ready 8 sum_valid            
+time     730 cycle    72     a_valid a_ready b b_valid b_ready 6 sum_valid            
+time     740 cycle    73     a_valid a_ready e b_valid b_ready 6 sum_valid            
+time     750 cycle    74     a_valid a_ready c b_valid b_ready a sum_valid            
+time     760 cycle    75     a_valid a_ready 1 b_valid           sum_valid            
+time     770 cycle    76     a_valid a_ready 5 b_valid           sum_valid            
+time     780 cycle    77     a_valid           b_valid           sum_valid            
+time     790 cycle    78     a_valid           b_valid           sum_valid            
+time     800 cycle    79     a_valid           b_valid           sum_valid            
+time     810 cycle    80     a_valid           b_valid           sum_valid            
+time     820 cycle    81     a_valid           b_valid           sum_valid            
+time     830 cycle    82     a_valid           b_valid           sum_valid            
+time     840 cycle    83     a_valid           b_valid           sum_valid            
+time     850 cycle    84     a_valid           b_valid           sum_valid            
+time     860 cycle    85     a_valid           b_valid           sum_valid            
+time     870 cycle    86     a_valid           b_valid           sum_valid            
+time     880 cycle    87     a_valid           b_valid           sum_valid            
+*** Random
+time     890 cycle    88     a_valid           b_valid           sum_valid            
+time     900 cycle    89     a_valid           b_valid           sum_valid sum_ready 6
+time     910 cycle    90     a_valid           b_valid           sum_valid            
+time     920 cycle    91     a_valid a_ready f b_valid b_ready b sum_valid            
+time     930 cycle    92     a_valid           b_valid           sum_valid sum_ready a
+time     940 cycle    93     a_valid           b_valid           sum_valid sum_ready 3
+time     950 cycle    94     a_valid a_ready 2 b_valid b_ready c sum_valid sum_ready c
+time     960 cycle    95     a_valid a_ready 7         b_ready   sum_valid sum_ready 6
+time     970 cycle    96     a_valid a_ready 7 b_valid b_ready 8 sum_valid            
+time     980 cycle    97             a_ready           b_ready   sum_valid            
+time     990 cycle    98     a_valid a_ready 6 b_valid b_ready 1 sum_valid            
+time    1000 cycle    99     a_valid           b_valid b_ready e sum_valid sum_ready 2
+time    1010 cycle   100     a_valid           b_valid           sum_valid            
+time    1020 cycle   101     a_valid a_ready d b_valid b_ready b sum_valid sum_ready 7
+time    1030 cycle   102     a_valid                             sum_valid            
+time    1040 cycle   103     a_valid a_ready 6         b_ready   sum_valid            
+time    1050 cycle   104                       b_valid b_ready e sum_valid sum_ready f
+time    1060 cycle   105     a_valid                             sum_valid sum_ready a
+time    1070 cycle   106     a_valid a_ready f b_valid b_ready 3 sum_valid            
+time    1080 cycle   107     a_valid a_ready 9         b_ready   sum_valid sum_ready e
+time    1090 cycle   108     a_valid           b_valid b_ready a sum_valid sum_ready f
+time    1100 cycle   109     a_valid a_ready 4         b_ready   sum_valid sum_ready 8
+time    1110 cycle   110             a_ready           b_ready   sum_valid            
+time    1120 cycle   111     a_valid a_ready d         b_ready   sum_valid            
+time    1130 cycle   112     a_valid a_ready 8         b_ready   sum_valid            
+time    1140 cycle   113                               b_ready   sum_valid sum_ready 4
+time    1150 cycle   114                       b_valid b_ready 0 sum_valid sum_ready 8
+time    1160 cycle   115     a_valid a_ready 9 b_valid b_ready d sum_valid            
+time    1170 cycle   116             a_ready           b_ready   sum_valid sum_ready 4
+time    1180 cycle   117     a_valid a_ready 6 b_valid b_ready 4 sum_valid            
+time    1190 cycle   118             a_ready           b_ready   sum_valid sum_ready 2
+time    1200 cycle   119             a_ready           b_ready   sum_valid sum_ready 3
+time    1210 cycle   120     a_valid a_ready 7         b_ready   sum_valid            
+time    1220 cycle   121     a_valid a_ready a         b_ready   sum_valid            
+time    1230 cycle   122     a_valid                   b_ready   sum_valid            
+time    1240 cycle   123     a_valid           b_valid b_ready e sum_valid            
+time    1250 cycle   124     a_valid           b_valid b_ready 6 sum_valid sum_ready 4
+time    1260 cycle   125     a_valid a_ready a         b_ready   sum_valid            
+time    1270 cycle   126     a_valid a_ready 8         b_ready   sum_valid            
+time    1280 cycle   127     a_valid           b_valid b_ready 0 sum_valid sum_ready a
+time    1290 cycle   128     a_valid                   b_ready   sum_valid sum_ready c
+time    1300 cycle   129     a_valid a_ready e b_valid b_ready 7 sum_valid            
+time    1310 cycle   130                       b_valid b_ready 1 sum_valid sum_ready 7
+time    1320 cycle   131             a_ready   b_valid b_ready 5 sum_valid sum_ready c
+time    1330 cycle   132             a_ready           b_ready   sum_valid            
+time    1340 cycle   133     a_valid a_ready 9 b_valid b_ready 8 sum_valid            
+time    1350 cycle   134             a_ready   b_valid b_ready d sum_valid            
+time    1360 cycle   135             a_ready   b_valid b_ready e sum_valid            
+time    1370 cycle   136             a_ready   b_valid b_ready 7 sum_valid sum_ready 7
+time    1380 cycle   137             a_ready                     sum_valid sum_ready 1
+time    1390 cycle   138             a_ready           b_ready   sum_valid sum_ready b
+time    1400 cycle   139             a_ready           b_ready   sum_valid            
+time    1410 cycle   140             a_ready   b_valid b_ready 6 sum_valid            
+time    1420 cycle   141             a_ready   b_valid b_ready 4 sum_valid sum_ready d
+time    1430 cycle   142             a_ready   b_valid           sum_valid sum_ready 6
+time    1440 cycle   143     a_valid a_ready a b_valid           sum_valid            
+time    1450 cycle   144     a_valid a_ready b b_valid           sum_valid sum_ready 6
+time    1460 cycle   145             a_ready   b_valid b_ready f sum_valid sum_ready 8
+time    1470 cycle   146             a_ready           b_ready   sum_valid sum_ready 2
+time    1480 cycle   147             a_ready           b_ready             sum_ready  
+time    1490 cycle   148             a_ready           b_ready             sum_ready  
+time    1500 cycle   149             a_ready   b_valid b_ready b           sum_ready  
+time    1510 cycle   150             a_ready   b_valid                                
+time    1520 cycle   151             a_ready   b_valid                                
+time    1530 cycle   152     a_valid a_ready 8 b_valid                                
+time    1540 cycle   153             a_ready   b_valid                     sum_ready  
+time    1550 cycle   154     a_valid a_ready 2 b_valid b_ready b sum_valid sum_ready e
+time    1560 cycle   155             a_ready   b_valid                     sum_ready  
+time    1570 cycle   156     a_valid a_ready 1 b_valid b_ready b sum_valid            
+time    1580 cycle   157             a_ready                     sum_valid            
+time    1590 cycle   158     a_valid a_ready 6 b_valid b_ready 8 sum_valid sum_ready 6
+time    1600 cycle   159     a_valid a_ready 5 b_valid           sum_valid            
+time    1610 cycle   160     a_valid a_ready 9 b_valid b_ready b sum_valid sum_ready 0
+time    1620 cycle   161     a_valid a_ready b b_valid b_ready 9 sum_valid sum_ready 1
+time    1630 cycle   162             a_ready           b_ready   sum_valid sum_ready 0
+time    1640 cycle   163             a_ready           b_ready   sum_valid            
+time    1650 cycle   164     a_valid a_ready 3         b_ready   sum_valid            
+time    1660 cycle   165             a_ready           b_ready   sum_valid            
+time    1670 cycle   166     a_valid a_ready 8         b_ready   sum_valid            
+time    1680 cycle   167             a_ready           b_ready   sum_valid            
+time    1690 cycle   168             a_ready   b_valid b_ready c sum_valid sum_ready 4
+time    1700 cycle   169     a_valid a_ready 9 b_valid b_ready 7 sum_valid            
+time    1710 cycle   170     a_valid a_ready a b_valid b_ready 7 sum_valid sum_ready 3
+time    1720 cycle   171     a_valid a_ready c b_valid b_ready c sum_valid            
+time    1730 cycle   172     a_valid a_ready 5         b_ready   sum_valid            
+time    1740 cycle   173             a_ready           b_ready   sum_valid sum_ready e
+time    1750 cycle   174     a_valid a_ready 0 b_valid b_ready 0 sum_valid sum_ready 1
+time    1760 cycle   175     a_valid a_ready d b_valid b_ready e sum_valid sum_ready 5
+time    1770 cycle   176     a_valid a_ready 4 b_valid b_ready 5 sum_valid sum_ready 1
+time    1780 cycle   177             a_ready           b_ready   sum_valid sum_ready 3
+time    1790 cycle   178             a_ready           b_ready   sum_valid            
+time    1800 cycle   179             a_ready           b_ready   sum_valid sum_ready 1
+time    1810 cycle   180             a_ready           b_ready   sum_valid            
+time    1820 cycle   181             a_ready           b_ready   sum_valid            
+time    1830 cycle   182     a_valid a_ready d         b_ready   sum_valid sum_ready 0
+time    1840 cycle   183             a_ready   b_valid b_ready 0 sum_valid            
+time    1850 cycle   184     a_valid a_ready 2 b_valid b_ready 7 sum_valid            
+time    1860 cycle   185             a_ready           b_ready   sum_valid            
+time    1870 cycle   186             a_ready   b_valid b_ready 6 sum_valid            
+time    1880 cycle   187             a_ready   b_valid b_ready 1 sum_valid sum_ready b
+time    1890 cycle   188             a_ready   b_valid b_ready 9 sum_valid            
+time    1900 cycle   189     a_valid a_ready 9         b_ready   sum_valid sum_ready 9
+time    1910 cycle   190     a_valid a_ready 9         b_ready   sum_valid            
+time    1920 cycle   191             a_ready           b_ready   sum_valid sum_ready d
+time    1930 cycle   192     a_valid a_ready 9         b_ready   sum_valid            
+time    1940 cycle   193             a_ready           b_ready   sum_valid sum_ready 9
+time    1950 cycle   194     a_valid a_ready d         b_ready   sum_valid            
+time    1960 cycle   195             a_ready           b_ready   sum_valid sum_ready f
+time    1970 cycle   196     a_valid a_ready 9         b_ready   sum_valid sum_ready a
+time    1980 cycle   197     a_valid a_ready 0 b_valid b_ready 9 sum_valid            
+time    1990 cycle   198     a_valid a_ready 0 b_valid b_ready 1 sum_valid sum_ready 2
+time    2000 cycle   199             a_ready           b_ready   sum_valid sum_ready 6
+time    2010 cycle   200             a_ready           b_ready   sum_valid sum_ready a
+time    2020 cycle   201             a_ready           b_ready             sum_ready  
+time    2030 cycle   202     a_valid a_ready 7         b_ready             sum_ready  
+time    2040 cycle   203     a_valid a_ready 6 b_valid b_ready 9           sum_ready  
+time    2050 cycle   204     a_valid                   b_ready                        
+time    2060 cycle   205     a_valid a_ready 5 b_valid b_ready 0 sum_valid            
+time    2070 cycle   206     a_valid           b_valid b_ready f sum_valid            
+time    2080 cycle   207     a_valid a_ready 6 b_valid b_ready 1 sum_valid            
+time    2090 cycle   208             a_ready   b_valid b_ready 9 sum_valid            
+time    2100 cycle   209     a_valid a_ready 4         b_ready   sum_valid sum_ready 9
+time    2110 cycle   210     a_valid a_ready a         b_ready   sum_valid            
+time    2120 cycle   211     a_valid a_ready f b_valid b_ready 1 sum_valid            
+time    2130 cycle   212                               b_ready   sum_valid sum_ready 0
+time    2140 cycle   213     a_valid                   b_ready   sum_valid sum_ready 6
+time    2150 cycle   214     a_valid a_ready f b_valid b_ready b sum_valid sum_ready 7
+time    2160 cycle   215     a_valid           b_valid b_ready 5 sum_valid            
+time    2170 cycle   216     a_valid a_ready 1 b_valid b_ready 4 sum_valid            
+time    2180 cycle   217     a_valid a_ready d b_valid b_ready a sum_valid sum_ready e
+time    2190 cycle   218     a_valid           b_valid b_ready d sum_valid sum_ready 7
+time    2200 cycle   219     a_valid a_ready b         b_ready   sum_valid            
+time    2210 cycle   220     a_valid a_ready 0         b_ready   sum_valid            
+time    2220 cycle   221     a_valid                   b_ready   sum_valid            
+time    2230 cycle   222     a_valid                   b_ready   sum_valid sum_ready f
+time    2240 cycle   223     a_valid           b_valid b_ready 0 sum_valid            
+time    2250 cycle   224     a_valid a_ready b b_valid b_ready 3 sum_valid            
+time    2260 cycle   225                       b_valid b_ready c sum_valid sum_ready f
+time    2270 cycle   226     a_valid                   b_ready   sum_valid sum_ready 3
+time    2280 cycle   227     a_valid a_ready e b_valid b_ready c sum_valid            
+time    2290 cycle   228     a_valid a_ready 2 b_valid b_ready 8 sum_valid            
+time    2300 cycle   229     a_valid                   b_ready   sum_valid            
+time    2310 cycle   230     a_valid           b_valid b_ready 8 sum_valid            
+time    2320 cycle   231     a_valid                             sum_valid sum_ready 9
+time    2330 cycle   232     a_valid           b_valid           sum_valid            
+time    2340 cycle   233     a_valid a_ready d b_valid b_ready b sum_valid sum_ready e
+time    2350 cycle   234     a_valid                             sum_valid            
+time    2360 cycle   235     a_valid a_ready 0 b_valid b_ready 0 sum_valid sum_ready d
+time    2370 cycle   236     a_valid           b_valid           sum_valid sum_ready e
+time    2380 cycle   237     a_valid a_ready 4 b_valid b_ready a sum_valid            
+time    2390 cycle   238             a_ready           b_ready   sum_valid            
+time    2400 cycle   239     a_valid a_ready 6 b_valid b_ready 7 sum_valid sum_ready c
+time    2410 cycle   240     a_valid           b_valid           sum_valid sum_ready 7
+time    2420 cycle   241     a_valid a_ready 6 b_valid b_ready 8 sum_valid            
+time    2430 cycle   242             a_ready           b_ready   sum_valid            
+time    2440 cycle   243             a_ready           b_ready   sum_valid sum_ready 6
+time    2450 cycle   244             a_ready           b_ready   sum_valid sum_ready a
+time    2460 cycle   245             a_ready           b_ready   sum_valid            
+time    2470 cycle   246             a_ready           b_ready   sum_valid sum_ready 8
+time    2480 cycle   247             a_ready           b_ready   sum_valid            
+time    2490 cycle   248             a_ready           b_ready   sum_valid sum_ready 0
+time    2500 cycle   249             a_ready           b_ready   sum_valid sum_ready e
+time    2510 cycle   250             a_ready           b_ready   sum_valid sum_ready d
+time    2520 cycle   251             a_ready           b_ready   sum_valid            
+time    2530 cycle   252             a_ready           b_ready   sum_valid            
+time    2540 cycle   253             a_ready           b_ready   sum_valid            
+time    2550 cycle   254             a_ready           b_ready   sum_valid sum_ready e
+time    2560 cycle   255             a_ready           b_ready             sum_ready  
+*** Draining the results
+time    2570 cycle   256             a_ready           b_ready             sum_ready  
+time    2580 cycle   257             a_ready           b_ready             sum_ready  
+time    2590 cycle   258             a_ready           b_ready             sum_ready  
+time    2600 cycle   259             a_ready           b_ready             sum_ready  
+time    2610 cycle   260             a_ready           b_ready             sum_ready  
+time    2620 cycle   261             a_ready           b_ready             sum_ready  
+time    2630 cycle   262             a_ready           b_ready             sum_ready  
+time    2640 cycle   263             a_ready           b_ready             sum_ready  
+time    2650 cycle   264             a_ready           b_ready             sum_ready  
+time    2660 cycle   265             a_ready           b_ready             sum_ready  
+./tb.sv PASS
+time    2670 cycle   266
+
+number of sum transfers : 100 per 261 cycles
